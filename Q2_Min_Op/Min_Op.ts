@@ -117,18 +117,13 @@ function countSetsOf1s(
 }
 
 /**
- * 
- * @param binaryRepresentation 
- * @returns 
- * {
-    start: number;
-    end: number;
-    width: number;
-  }[]
-
-  @description Find and group consecutives 1s in a binary string, called clusters. 
-  Each cluster in the array will have starting and ending position, based on a 0-start index
-  Width defines the number of 1s in that clusters. If starting and ending index are the same, then width is of one 
+ *
+ * @param binaryRepresentation
+ * @returns An array of cluster objects
+ *
+ * @description Find and group consecutives 1s in a binary string, called clusters.
+ *  Each cluster in the array will have starting and ending position, based on a 0-start index
+ * Width defines the number of 1s in that clusters. If starting and ending index are the same, then width is of one
  */
 function getClustersOfOnes(binaryRepresentation: string) {
   let clusters: {
